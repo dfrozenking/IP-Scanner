@@ -44,8 +44,8 @@ while result == 200
 
 	conteudo.each { |x|
 		if cmmurls.include?(x)
-			conteudo.delete(x
-)		else
+			conteudo.delete(x)
+		else
 			File.open('filtered.txt', "a+") do |filt|
 				filt.write(x+"\n")
 			end
